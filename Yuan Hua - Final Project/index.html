@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link href='../../lib/bootstrap/css/bootstrap.min.css' rel='stylesheet' />
+		<link href='./style.css' rel='stylesheet' />
+	</head>
+
+	<body>
+		<div class='container'>
+
+			<div class='header'>
+			<p>Yuan Hua <br>
+			   Siqi Zhu <br>
+			   ARTG5330 Visualization Technologies</p>
+
+			<h1>GDP Around the World</h1>
+
+			<svg width="1100">
+  			<line x1="0" y1="0" x2="1070" y2="0" style="stroke:black;stroke-width:3" />
+			</svg>
+			</div>
+			
+			<div class = 'graph'>
+				<h4>GDP Per Capita Worldwide in 2017</h4>
+
+				<div class='plot' id='plot-1'></div>
+
+				<div id="tooltip" class='custom-tooltip'>
+    			<p><strong>Country: </strong><span id='value-country'></span></p>
+    			<p><strong>GDP Per Capita:</strong>
+    				<span id='value-GDP'></span></p>
+  				</div>
+
+				<br></br>
+				<br></br>
+				<div class='btn-toolbar justify-content-between' role='toolbar'>
+					<h4>The Change of GDP in Large-population Countries Over Years</h4>
+					<div class='btn-group' role='group' data-toggle='button'>
+						<a href='#' class='btn btn-outline-secondary btn-sm' id='GDP1990'>1990</a>
+						<a href='#' class='btn btn-outline-secondary btn-sm' id='GDP2000'>2000</a>
+						<a href='#' class='btn btn-outline-secondary btn-sm' id='GDP2010'>2010</a>
+						<a href='#' class='btn btn-outline-secondary btn-sm' id='GDP2017'>2017</a>
+					</div>
+				</div>
+
+				<div class='key-1'>
+				<p>NOR:<span>  The countires with higher GDP</span></p>
+				</div>
+				<div class='key-2'>
+				<p>CHN:<span>  The countires with large population</span></p>
+				</div>
+
+				<div class='plot' id='plot-2'></div>
+				
+			</div>
+
+		</div>
+		<script src='../../lib/d3/d3.min.js'></script>
+		<script src='./script.js'></script>
+		<script type="d3-tip"></script>>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	</body>
+
+</html>
+
+
